@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Hero */
 
 .hero {
@@ -22,18 +29,24 @@
 /* About */
 
 .about {
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #00c6ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0072ff),
+    to(#00c6ff)
+  );
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
   background: linear-gradient(
     to right,
     #0072ff,
     #00c6ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-bottom: 8rem;
+  height: 100vh;
 }
 .about-box {
   text-align: center;
@@ -48,6 +61,7 @@
 
 .about-text {
   margin-bottom: 3rem;
+  line-height: 2rem;
 }
 
 .about-more-text {
@@ -75,6 +89,7 @@
 .project-text-box {
   font-size: var(--fs-s);
   line-height: 1.3;
+  max-width: 50rem;
 }
 
 .project-heading {
@@ -86,6 +101,8 @@
 
 .project-text {
   margin-bottom: 2rem;
+  /* padding-right: 10rem; */
+  padding-right: 5rem;
 }
 
 .project-btn-box {
@@ -95,12 +112,17 @@
 /* Contact */
 
 .contact {
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #00c6ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0072ff),
+    to(#00c6ff)
+  );
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
   background: linear-gradient(
     to right,
     #0072ff,
@@ -150,8 +172,12 @@
 }
 
 .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 2rem;
 }
@@ -164,12 +190,16 @@
 .icon-link:visited {
   text-decoration: none;
   color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
 }
 
 .icon-link:hover,
 .icon-link:active {
+  -webkit-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
   transform: translateY(-10%);
 }
 

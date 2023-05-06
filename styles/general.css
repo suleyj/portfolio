@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* css reset begin*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -135,6 +142,7 @@ table {
 *::before {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -180,12 +188,15 @@ body {
   font-size: var(--fs-btn);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 .link-primary {
   background-color: var(--secondary);
   color: var(--primary);
+  -webkit-box-shadow: inset 0px 0px 0px 0.25rem var(--primary);
   box-shadow: inset 0px 0px 0px 0.25rem var(--primary);
 }
 
@@ -193,6 +204,7 @@ body {
 .btn {
   background-color: var(--primary);
   color: var(--secondary);
+  -webkit-box-shadow: inset 0px 0px 0px 0.25rem var(--secondary);
   box-shadow: inset 0px 0px 0px 0.25rem var(--secondary);
 }
 
@@ -224,6 +236,7 @@ body {
 
 .container {
   padding: 5%;
+  display: -ms-grid;
   display: grid;
   place-content: center;
 }
@@ -233,5 +246,6 @@ body {
 .img {
   max-width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 0 5px #979797;
   box-shadow: 0 0 5px #979797;
 }
