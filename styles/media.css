@@ -1,0 +1,79 @@
+@media (min-width: 770px) {
+  :root {
+    --fs-xl: 4rem;
+  }
+
+  .about-info-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 5rem;
+  }
+
+  .about-img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-box {
+    text-align: left;
+  }
+
+  :root {
+    --fs-xl: 5rem;
+    --fs-l: 4rem;
+  }
+  .secondary-heading {
+    margin-bottom: 5rem;
+  }
+
+  .hero-btn:link,
+  .hero-btn:active {
+    font-size: 2.5rem;
+  }
+  .d-con {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .about-info-box {
+    gap: 10rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: none;
+  }
+
+  .contact-form {
+    max-width: 60rem;
+    text-align: left;
+  }
+
+  .contact-name,
+  .contact-email,
+  .contact-msg {
+    width: 100%;
+    padding: 0.5em 1em;
+    background-color: var(--secondary);
+    border: none;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .recap {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-info-box {
+    gap: 10rem;
+  }
+}

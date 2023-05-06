@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suleyman Jama Portfolio</title>
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="hero" class="hero container d-con">
+      <div class="hero-box">
+        <h1 class="hero-title">
+          Hi, my name is <span class="hero-name">Suleyman Jama</span><br />I'm a
+          Software Developer
+        </h1>
+        <a href="#about" class="link link-primary hero-btn inner-link"
+          >Know More</a
+        >
+      </div>
+    </section>
+    <section id="about" class="about container">
+      <div class="about-box">
+        <h2 class="secondary-heading">ABOUT ME</h2>
+        <div class="about-info-box">
+          <img
+            class="img about-img"
+            src="Images/about-me.jpg"
+            alt="Computer with code picture"
+          />
+          <div class="about-textbox">
+            <p class="about-text">
+              I am a software developer with experience building websites and
+              web applications. I specialize in HTML, CSS, and JavaScript . I
+              also have experience working with React. I enjoy coding personal
+              projects on my free time. You can view some of them below.
+            </p>
+            <a class="link link-secondary inner-link" href="#projects">
+              View Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects container">
+      <div class="projects-box">
+        <h2 class="secondary-heading col-b">PROJECTS</h2>
+        <div class="project-info-box">
+          <div class="project-text-box">
+            <p class="project-heading">Country App</p>
+            <p class="project-text">
+              This project displays country info with cards. You can search for
+              the countries you want to see. You can click a card to see more
+              info. This project was built using react. Completing this project
+              taught me react components, routing, hooks, and how to use API's.
+            </p>
+            <div class="project-btn-box">
+              <a
+                href="https://suley890.github.io/country-app/"
+                target="_blank"
+                class="link link-primary"
+                >See Live</a
+              >
+              <a
+                href="https://github.com/Suley890/country-app"
+                target="_blank"
+                class="link link-primary"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <img
+            class="img"
+            src="Images/country-app.PNG"
+            alt=" Country App picture"
+          />
+        </div>
+        <div class="project-info-box">
+          <div class="project-text-box">
+            <p class="project-heading">Landing Page</p>
+            <p class="project-text">
+              For this project I created a landing page for a fictional company.
+              I used CSS and HTML to complete this project. Doing this project
+              taught me how to use CSS Grid, CSS Flexbox, and responsive design
+              with media queries.
+            </p>
+            <div class="project-btn-box">
+              <a
+                href="https://suley890.github.io/Landing-Page/"
+                target="_blank"
+                class="link link-primary"
+                >See Live</a
+              >
+              <a
+                href="https://github.com/Suley890/Landing-Page"
+                target="_blank"
+                class="link link-primary"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <img
+            class="img"
+            src="Images/landing-page.PNG"
+            alt="Landing Page picture"
+          />
+        </div>
+        <div class="project-info-box">
+          <div class="project-text-box">
+            <p class="project-heading">Calculator App</p>
+            <p class="project-text">
+              In this project I created a calculator. The calculator can clear
+              its screen, delete inputs, and calculate expressions with multiple
+              operators. I used the shunting-yard algorithm for the
+              calculations. This project taught me data structures, algorithms,
+              and CSS Grid.
+            </p>
+            <div class="project-btn-box">
+              <a
+                href="https://suley890.github.io/calculator/"
+                class="link link-primary"
+                target="_blank"
+                >See Live</a
+              >
+              <a
+                href="https://github.com/Suley890/calculator"
+                class="link link-primary"
+                target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <img
+            class="img"
+            src="Images/calculator.PNG"
+            alt="Calculator App picture"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact container">
+      <div class="contact-box">
+        <h2 class="contact-title secondary-heading">Let's Chat</h2>
+        <form action="POST" data-netlify="true" class="contact-form">
+          <input
+            class="contact-name"
+            required
+            placeholder="Name"
+            type="text"
+            name="name"
+          />
+          <input
+            class="contact-email"
+            required
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+          <textarea
+            class="contact-msg"
+            required
+            name="message"
+            cols="30"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+          <div class="recap">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <button class="submit-btn btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="footer-box">
+        <a href="#hero" class="inner-link icon-link up-icon">
+          <ion-icon class="icon" name="chevron-up-outline"></ion-icon>
+        </a>
+        <div class="icon-box">
+          <a
+            href="https://github.com/Suley890"
+            target="_blank"
+            class="icon-link git-link"
+          >
+            <ion-icon class="icon" name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/suleyman-jama-2433591b9/"
+            target="_blank"
+            class="icon-link linkedin-link"
+          >
+            <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+        <hr class="footer-hr" />
+        <p class="copy">© 2022 Suleyman Jama</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

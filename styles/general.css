@@ -1,0 +1,237 @@
+/* css reset begin*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset end */
+
+/* Default */
+*,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Colors */
+  --primary: #009cff;
+  --secondary: #fff;
+  --hd-col: #212529;
+  --p-col: #495057;
+
+  /* Font sizes */
+  --fs-xl: 3.5rem;
+  --fs-l: 3rem;
+  --fs-m: 2.2rem;
+  --fs-s: 1.8rem;
+  /* --fs-xs:; */
+  --fs-btn: 1.8rem;
+}
+
+h1,
+h2,
+.project-heading {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Nunito sans", sans-serif;
+}
+
+/* Links, Buttons */
+.link:link,
+.link:visited,
+.btn {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  font-size: var(--fs-btn);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link-primary {
+  background-color: var(--secondary);
+  color: var(--primary);
+  box-shadow: inset 0px 0px 0px 0.25rem var(--primary);
+}
+
+.link-secondary,
+.btn {
+  background-color: var(--primary);
+  color: var(--secondary);
+  box-shadow: inset 0px 0px 0px 0.25rem var(--secondary);
+}
+
+.link-primary:hover,
+.link-primary:active {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+.link-secondary:hover,
+.link-secondary:active,
+.btn:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+/* Heading */
+
+.secondary-heading {
+  font-size: var(--fs-l);
+  margin-bottom: 4rem;
+}
+
+.col-b {
+  color: var(--hd-col);
+}
+
+/* Container */
+
+.container {
+  padding: 5%;
+  display: grid;
+  place-content: center;
+}
+
+/* Image */
+
+.img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px #979797;
+}
