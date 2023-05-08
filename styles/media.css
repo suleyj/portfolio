@@ -11,16 +11,22 @@
   }
 
   .about-info-box {
-    display: -webkit-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5rem;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
-    gap: 5rem;
+    gap: 5rem; */
   }
-
+  .about-textbox {
+    align-self: center;
+    text-align: left;
+  }
   .about-img {
     margin-bottom: 0;
   }
